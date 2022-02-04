@@ -1,0 +1,86 @@
+.orla__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding: 2rem 5rem;
+}
+
+.orla__navbar-hamburger {
+  display: none;
+  position: absolute;
+  left: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 880px) {
+  .orla__navbar-hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .orla__navbar {
+    padding: 2rem 3rem;
+  }
+}
+
+.orla__navbar__navbar-logo {
+  width: 150px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.orla__navbar__navbar-logo img {
+  height: 32px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.orla__navbar__navlinks {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  color: var(--primary);
+}
+
+@media screen and (max-width: 880px) {
+  .orla__navbar__navlinks {
+    display: none;
+  }
+}
+
+.orla__navbar a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.orla__navbar a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 850px) {
+  .orla__navbar__navlinks a {
+    margin-right: 1.5re;
+  }
+}
+
+.orla__navbar__icons {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.orla__navbar__icons svg:hover {
+  cursor: pointer;
+}
+
+.orla__navbar__icons svg:not(:nth-child(1)) {
+  margin-left: 1rem;
+}
